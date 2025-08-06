@@ -183,37 +183,80 @@
 
 //Task Day2 task4
 
+//using System;
+//class Grade
+//{
+//    static void Main()
+//    {
+//        Console.WriteLine("Enter MARK");
+//        int Mark = Convert.ToInt32(Console.ReadLine());
+
+//        switch (Mark)
+//        {
+//            case int m when(m>=90&&m<=100):Console.WriteLine("S Grade");
+//                break;
+
+//            case int m when (m >= 80 && m <= 90):
+//                Console.WriteLine("A Grade");
+//                break;
+//            case int m when (m >= 70 && m <= 80):
+//                Console.WriteLine("B Grade");
+//                break;
+//            case int m when (m >= 60 && m <= 70):
+//                Console.WriteLine("C Grade");
+//                break;
+//            case int m when (m >= 50 && m <= 60):
+//                Console.WriteLine("D Grade");
+//                break;
+//            case int m when (m >= 40 && m <= 50):
+//                Console.WriteLine("E Grade");
+//                break;
+//            case int m when (m <40):
+//                Console.WriteLine("Student has Failed!!");
+//                break;
+//        }
+//    }
+//}
+
+//Task4 DIAMOND PATTERN
+
 using System;
-class Grade
+
+class DiamondPattern
 {
     static void Main()
     {
-        Console.WriteLine("Enter MARK");
-        int Mark = Convert.ToInt32(Console.ReadLine());
+        int n;
 
-        switch (Mark)
+        Console.Write("Enter the number of rows (half of diamond height): ");
+        n = int.Parse(Console.ReadLine());
+
+        
+        for (int i = 1; i <= n; i++)
         {
-            case int m when(m>=90&&m<=100):Console.WriteLine("S Grade");
-                break;
+            
+            for (int j = 1; j <= n - i; j++)
+                Console.Write(" ");
 
-            case int m when (m >= 80 && m <= 90):
-                Console.WriteLine("A Grade");
-                break;
-            case int m when (m >= 70 && m <= 80):
-                Console.WriteLine("B Grade");
-                break;
-            case int m when (m >= 60 && m <= 70):
-                Console.WriteLine("C Grade");
-                break;
-            case int m when (m >= 50 && m <= 60):
-                Console.WriteLine("D Grade");
-                break;
-            case int m when (m >= 40 && m <= 50):
-                Console.WriteLine("E Grade");
-                break;
-            case int m when (m <40):
-                Console.WriteLine("Student has Failed!!");
-                break;
+            
+            for (int j = 1; j <= 2 * i - 1; j++)
+                Console.Write("*");
+
+            Console.WriteLine();
+        }
+
+        
+        for (int i = n - 1; i >= 1; i--)
+        {
+           
+            for (int j = 1; j <= n - i; j++)
+                Console.Write(" ");
+
+          
+            for (int j = 1; j <= 2 * i - 1; j++)
+                Console.Write("*");
+
+            Console.WriteLine();
         }
     }
 }
