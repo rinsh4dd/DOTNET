@@ -220,43 +220,85 @@
 
 //Task4 DIAMOND PATTERN
 
+//using System;
+
+//class DiamondPattern
+//{
+//    static void Main()
+//    {
+//        int n;
+
+//        Console.Write("Enter the number of rows (half of diamond height): ");
+//        n = int.Parse(Console.ReadLine());
+
+
+//        for (int i = 1; i <= n; i++)
+//        {
+
+//            for (int j = 1; j <= n - i; j++)
+//                Console.Write(" ");
+
+
+//            for (int j = 1; j <= 2 * i - 1; j++)
+//                Console.Write("*");
+
+//            Console.WriteLine();
+//        }
+
+
+//        for (int i = n - 1; i >= 1; i--)
+//        {
+
+//            for (int j = 1; j <= n - i; j++)
+//                Console.Write(" ");
+
+
+//            for (int j = 1; j <= 2 * i - 1; j++)
+//                Console.Write("*");
+
+//            Console.WriteLine();
+//        }
+//    }
+//}
+
 using System;
 
-class DiamondPattern
+class Animal
 {
-    static void Main()
+   public string Name;
+    public int Age;
+
+    public void speak()
     {
-        int n;
-
-        Console.Write("Enter the number of rows (half of diamond height): ");
-        n = int.Parse(Console.ReadLine());
-
-        
-        for (int i = 1; i <= n; i++)
+        Console.WriteLine($"iam {Name} and iam {Age} years old. ");
+    }
+   public class Dog : Animal
+    {
+        public string breed;
+    }
+    public class Cat : Animal
+    {
+        public void Meow()
         {
-            
-            for (int j = 1; j <= n - i; j++)
-                Console.Write(" ");
-
-            
-            for (int j = 1; j <= 2 * i - 1; j++)
-                Console.Write("*");
-
-            Console.WriteLine();
+            Console.WriteLine("Meoww!!");
         }
-
-        
-        for (int i = n - 1; i >= 1; i--)
+    }
+    class Program
+    {
+        static void Main()
         {
-           
-            for (int j = 1; j <= n - i; j++)
-                Console.Write(" ");
+            Dog dog = new Dog();
+            dog.Name = "Buddy";
+            dog.Age = 10;
+            dog.breed = "Golden Retriever";
+            dog.speak();
 
-          
-            for (int j = 1; j <= 2 * i - 1; j++)
-                Console.Write("*");
-
-            Console.WriteLine();
+            Cat cat= new Cat();
+            cat.Name = "charlie";
+            cat.Age = 2;
+            cat.Meow();
+            cat.speak();
         }
     }
 }
+
