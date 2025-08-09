@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rinsh\\source\\repos\\Calc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66439675-625D-4A3F-B902-A13E48BE8F16}|Calc\\Calc.csproj|c:\\users\\rinsh\\source\\repos\\calc\\calc\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66439675-625D-4A3F-B902-A13E48BE8F16}|Calc\\Calc.csproj|solutionrelative:calc\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66439675-625D-4A3F-B902-A13E48BE8F16}|Calc\\Calc.csproj|c:\\users\\rinsh\\source\\repos\\calc\\calc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66439675-625D-4A3F-B902-A13E48BE8F16}|Calc\\Calc.csproj|solutionrelative:calc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\Calc\\Calc\\Class1.cs",
+              "RelativeDocumentMoniker": "Calc\\Class1.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\Calc\\Calc\\Class1.cs",
+              "RelativeToolTip": "Calc\\Class1.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA1wEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T09:17:20.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\Calc\\Calc\\Program.cs",
+              "RelativeDocumentMoniker": "Calc\\Program.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\Calc\\Calc\\Program.cs",
+              "RelativeToolTip": "Calc\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T09:14:54.604Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
