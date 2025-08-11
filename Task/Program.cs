@@ -261,44 +261,303 @@
 //    }
 //}
 
+//using System;
+
+//class Animal
+//{
+//   public string Name;
+//    public int Age;
+
+//    public void speak()
+//    {
+//        Console.WriteLine($"iam {Name} and iam {Age} years old. ");
+//    }
+//   public class Dog : Animal
+//    {
+//        public string breed;
+//    }
+//    public class Cat : Animal
+//    {
+//        public void Meow()
+//        {
+//            Console.WriteLine("Meoww!!");
+//        }
+//    }
+//    class Program
+//    {
+//        static void Main()
+//        {
+//            Dog dog = new Dog();
+//            dog.Name = "Buddy";
+//            dog.Age = 10;
+//            dog.breed = "Golden Retriever";
+//            dog.speak();
+
+//            Cat cat= new Cat();
+//            cat.Name = "charlie";
+//            cat.Age = 2;
+//            cat.Meow();
+//            cat.speak();
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Drawing;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace Calc
+//{
+//    public interface IShape
+//    {
+//        double GetArea();
+//    }
+//    public class Circle : IShape
+//    {
+//        public double Radius;
+//        public Circle(double radius)
+//        {
+//            Radius = radius;
+//        }
+//        public double GetArea()
+//        {
+//            return Math.PI * Radius * Radius;
+//        }
+//    }
+
+//    public class Square : IShape
+//    {
+//        public double Side;
+
+//        public Square(double side)
+//        {
+//            Side = side;
+//        }
+
+//        public double GetArea()
+//        {
+//            return Side * Side;
+//        }
+//    }
+
+//    class Rectangle : IShape
+//    {
+//        public double Width;
+//        public double Height;
+
+//        public Rectangle(double width, double height)
+//        {
+//            Width = width;
+//            Height = height;
+//        }
+//        public double GetArea()
+//        {
+//            return Width * Height;
+//        }
+//    }
+
+//    class Program
+//    {
+//        static void Main()
+//        {
+//            IShape circle = new Circle(5);
+//            IShape square = new Square(4);
+//            IShape rectangle = new Rectangle(10, 15);
+
+//            Console.WriteLine($"Circle Area: {circle.GetArea()}");
+//            Console.WriteLine($"Square Area: {square.GetArea()}");
+//            Console.WriteLine($"Rectangle Area: {rectangle.GetArea()}");
+//        }
+//    }
+
+
+
+//class Program
+//{
+
+//    public Program()
+//    {
+//        Console.WriteLine("Constructor Called");
+//    }
+
+//    static  int age;
+//    string name;
+
+//    public static void Main(string[] args)
+//    {
+//        Program std = new Program();
+//        age = 50;
+//        std.name="Rinshad"; 
+//    }
+//}
+
+
+//class Program
+//{
+//    const double pi= 3.14;
+//    int age;
+//    string name;
+//    const string country = "India";
+//    public static void Main()
+//    {
+//        Program std = new Program();
+//        std.age = 50;
+//        std.name = "Rinshad";
+
+//        Console.WriteLine($"my name is {std.name} , and im {std.age } years old!! im in{country} ");
+//    }
+//}
+
+//class Program
+//{
+//    void greet(string name)
+//    {
+//        Console.WriteLine($"hai my name is {name}");
+//    }
+//    static void Main()
+//    {
+//        Program dtr = new Program();
+//        dtr.greet("Rinshad");
+//    }
+//}                        fn with parameter
+
+
+//class Program
+//{
+//    void greet()
+//    {
+//        Console.WriteLine("hai my name is Rinshad");
+//    }
+//    static void Main()
+//    {
+
+//        Program greet = new Program();
+//        greet.greet();
+//    }
+//}
+//}                        fn without parameter and with return type
+
+//class Program
+//{
+//   public int Add (int  a,int b)
+//    {
+//               return a + b;
+//    }
+//    static void Main()
+//    {
+//        Program obj = new Program();
+
+//        int result = obj.Add(100, 200);
+//        Console.WriteLine(result);
+//    }
+//}
+//instance method with parameter and return type
+// function with parameter and return type
+
+
+
+//class Program
+//{
+//    public static int Add(int a,int b)
+//    {
+//               return a + b;
+//    }
+//   static void Main(String[] args)
+//    {
+//        Console.WriteLine(Add(100, 200));
+//    }
+//}
+//static method with parameter and return type
+
+//class Program
+//{
+//    public int Square(int a)
+//    {
+//               return a * a;
+//    }
+//    static void Main(string[] args)
+//    {
+//        Program obj = new Program();
+//        int res = obj.Square(20);
+
+//        Console.WriteLine(res);
+//    }
+//}
+
+//LINQ
 using System;
+//using System.Data.SqlTypes;
+//  namespace Task
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
 
-class Animal
-{
-   public string Name;
-    public int Age;
 
-    public void speak()
-    {
-        Console.WriteLine($"iam {Name} and iam {Age} years old. ");
-    }
-   public class Dog : Animal
-    {
-        public string breed;
-    }
-    public class Cat : Animal
-    {
-        public void Meow()
-        {
-            Console.WriteLine("Meoww!!");
-        }
-    }
-    class Program
-    {
-        static void Main()
-        {
-            Dog dog = new Dog();
-            dog.Name = "Buddy";
-            dog.Age = 10;
-            dog.breed = "Golden Retriever";
-            dog.speak();
+//            var result = numbers.Where(n =>n % 2 == 0)
+//                .OrderBy(n => n)
+//                .Select(n=>n*n);
 
-            Cat cat= new Cat();
-            cat.Name = "charlie";
-            cat.Age = 2;
-            cat.Meow();
-            cat.speak();
-        }
-    }
-}
+//           foreach(var num in result)
+//            {
+//                Console.WriteLine(num);
+//            }
+//        }
+        
+//    }
+//}
+
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        List<String> names = new List<string> { "Rinshad", "john","Sulaiman" };
+
+//        var shortNames = names.Where(names =>names.Length<=8)
+//           . Select(names => names.ToUpper());
+
+//        foreach(var n in shortNames)
+//        {
+//            Console.WriteLine(n);
+//        }
+//    }
+//}
+
+
+//linq with object
+
+//using System;
+//class Student
+//{
+//    public string Name { get; set; }
+//    public int Mark { get; set; }
+
+//}
+
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        var students = new List<Student>
+//        {
+//            new Student {Name="RInshad", Mark=90},
+//            new Student {Name="Kunjippa",Mark=80},
+//            new Student{Name="Sulaiman",Mark=85}
+//        };
+//        var toppers = students
+//            .Where(s => s.Mark >= 85)
+//            .OrderByDescending(s => s.Mark)
+//            .Select(s => s.Name);
+//        foreach(var std in toppers)
+//        {
+//            Console.WriteLine(std);
+//        }
+//    }
+   
+//}
 
